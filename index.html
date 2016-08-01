@@ -76,6 +76,37 @@
 <script>
   //start of Javascript
   
+  // This is the current index we're showing in the image array.
+      var currentImageIndex = 0;
+
+			// This is the list of images we'll rotate through.
+      var images = [							
+        "https://assets.ischool.uw.edu/ai/kdavis78/pci/kdavis78-1.jpg",
+        "https://assets.ischool.uw.edu/ai/batya/pci/batya-1.jpg",
+        "https://assets.ischool.uw.edu/ai/jhullman/pci/jhullman-1.jpg",
+        "https://assets.ischool.uw.edu/ai/ajko/pci/ajko-1.jpg"
+      ];
+
+			// This function will update the image and the image index.
+			function updateImage() {
+
+				// Find the image to update.
+				var image = document.getElementById("currentImage");
+
+				// Assign the "src" attribute the new URL.
+				image.src = images[currentImageIndex];
+        
+        // Move to the next index.
+        currentImageIndex = currentImageIndex + 1;
+        
+        // If we've passed the end of the array, start over at 0.
+        if(currentImageIndex >= images.length)
+        	currentImageIndex = 0;
+
+			}
+      
+      // Set an interval timer that calls updateImage() every 1000 milliseconds
+      setInterval(updateImage, 1000);
 
 
 </script>
