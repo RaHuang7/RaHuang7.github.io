@@ -88,14 +88,18 @@
   .bs-callout-danger {
     border-left-color: #d9534f;
   }
-  .bs-callout-danger h4 {
+  .bs-callout-danger h2 {
     color: #d9534f;
   }
   
-  table, th, td {
+  .table, .th, .td {
     border: 1px solid black;
     border-collapse: collapse;
-  }
+}
+  .th, .td {
+    padding: 5px;
+    text-align: center;
+}
 </style>
 </head>
 
@@ -121,29 +125,24 @@
           This is an info callout.
       </div>  
       
-      <table style="width:100%">
-        <tr>
-          <th></th>
-          <th>Syllabus</th>
-          <th></th>
-        </tr>
-        
-        <tr>
-          <td>Topic</td>
-          <td>Description</td>
-        </tr>
-        
-        <tr>
-          <td>Topic</td>
-          <td>Description</td>
-        </tr>
-        
-        <tr>
-          <td>Topic</td>
-          <td>Description</td>
-        </tr>
-
-      </table>
+    <table style="width:100%">
+      <caption>Syllabus</caption>
+      
+      <tr>
+        <th>Topic</th>
+        <th>Description</th>
+      </tr>
+      
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+      
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
       
       <div class="bs-callout bs-callout-danger">
         <h2>General Tips/Advice</h2>
