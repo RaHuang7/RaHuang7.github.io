@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html> 
+<html>
 <head>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 <style>
   
-   body {
+  body {
   font-family: "Times New Roman", Times, serif;
   padding-top: 30px;
   padding-right: 30px;
@@ -22,7 +22,8 @@
   }
   
   h2 {
-  font-size: 15px;
+  text-align: center;  
+  font-size: 25px;
   }
   
   .links {
@@ -62,7 +63,59 @@
   
   #homepage-link {
   color: black;
+  }
   
+  .bs-callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+  }
+  .bs-callout h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  .bs-callout p:last-child {
+    margin-bottom: 0;
+  }
+  .bs-callout-info {
+    border-left-color: #5bc0de;
+  }
+ .bs-callout-info h2 {
+  color: #5bc0de;
+  }
+  
+  .bs-callout-danger {
+    border-left-color: #d9534f;
+  }
+  .bs-callout-danger h2 {
+    color: #d9534f;
+  }
+  
+  
+  .table {
+  border: 1px solid black; 
+  border-collapse:collapse;
+  }
+  
+  th {
+  border: 1px solid black;
+  border-collapse: collapse; 
+  height: 50px;
+  padding: 5px;
+  text-align:center;
+  }
+  
+  td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+  text-align:center;
+  }
+  
+  tr {
+  height: 200px;
   }
   
 </style>
@@ -71,7 +124,7 @@
   <body style="background-color:lightyellow;">
     <a href="https://dastyni.github.io/" target="_blank"> stuff </a>  
   
-  <div class="container bordered-all-thick"><!-- Start of Home Page Container-->
+  <div class="container bordered-all-thick"><!-- Start of Euro Page Container-->
     <div class="row bordered-bottom-side-thick"><!-- Start of Header Row Division -->
       <div class="col-xs-4"><!-- Start of Blank Header Column Left -->
       </div><!-- End of Blank Header Column Left -->
@@ -85,9 +138,69 @@
     </div><!-- End of Header Row Division -->
   
     <div class="row"><!-- Start of Contents Row Division -->
-    
+      <div class="col-xs-1"><!-- Start of Blank Body Column Left -->
+      </div><!-- End of Blank Body Column Left -->
+      
+      <div class="col-xs-10"><!-- Start of Contents Column Division -->
+        <div class="container"><!-- Start of Contents Column Container -->
+          
+          <div class="row"><!-- Start of Course Overview Row Division -->
+            <div class="col-xs-10"><!-- Start of Course Overview Column -->
+              <div class="bs-callout bs-callout-info"><!-- Start of Course Overview -->
+                <h2>Course Overview</h2>
+                  This is an info callout.
+              </div><!-- End of Course Overview -->  
+            </div><!-- End of Course Overview Column -->
+          </div><!-- End of Course Overview Row Division -->
+          
+          <div class="row"><!-- Start of Syllabus Row Division -->
+            <div class="col-xs-10"><!-- Start of Syllabus Column -->
+              <table class="table table-bordered"><!-- Start of Syllabus -->
+                <h2>Syllabus</h2>
+                
+                <tr>
+                  <th>Topic</th>
+                  <th>Description</th>
+                </tr>
+                
+                <tr>
+                  <td></td>
+                  <td></td>
+                </tr>
+                
+                <tr>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </table><!-- End of Syllabus -->
+            </div><!-- End of Syllabus Column -->
+          </div><!-- End of Syllabus Row Division -->
+          
+          <div class="row"><!-- Start of General Tips/Advice Row Division -->
+            <div class="col-xs-10"><!-- Start of General Tips/Advice Column -->
+              <div class="bs-callout bs-callout-danger"><!-- Start of General Tips/Advice -->
+                <h2>General Tips/Advice</h2>
+                  This is a danger callout.
+                <ul>
+                  <li>Coffee</li>
+                  <li>Tea</li>
+                  <li>Milk</li>
+                  <li>Coffee</li>
+                  <li>Tea</li>
+                  <li>Milk</li>
+                </ul>
+              </div><!-- End of General Tips/Advice -->
+            </div><!-- End of General Tips/Advice Column -->
+          </div><!-- End of General Tips/Advice Row Division -->
+        
+        </div><!-- Start of Contents Column Container -->
+      </div><!-- End of Contents Column Division -->
+      
+      <div class="col-xs-1"><!-- Start of Blank Body Column Right -->
+      </div><!-- End of Blank Body Column Right -->
     </div><!-- End of Contents Row Division -->
-  </div><!-- End of Home Page Container-->
+    
+  </div><!-- End of Euro Page Container-->
   </body>
 </html>
 
