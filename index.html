@@ -89,8 +89,13 @@
     "http://main.diabetes.org/dorg/images/lps/types-of-carbohydrate-265x170.jpg",
     "https://s-media-cache-ak0.pinimg.com/originals/af/31/5f/af315f87c135a165cf301c9ba8e29e58.gif",
   ];
+
+  var playing = false;
   
   function UpdateSlide() {
+
+    if(!playing)
+      return;
     
     var slide = document.getElementById("CurrentSlide");
     
@@ -101,12 +106,12 @@
     if(CurrentSlideIndex >= slides.length)
         	CurrentSlideIndex = 0;
   }
-  
-  
+
+  setInterval(UpdateSlide, 100);  
+
   function play() {
-    setInterval(UpdateSlide, 3000);
+    playing = !playing;
   }
-  
   
   //end of Javascript
 </script>
