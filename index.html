@@ -92,13 +92,13 @@
   
   function UpdateSlide() {
     
-    var image = document.getElementById("CurrentSlide");
+    var slide = document.getElementById("CurrentSlide");
     
-    image.src = images[CurrentSlideIndex];
+    slide.src = slides[CurrentSlideIndex];
     
     CurrentSlideIndex = CurrentSlideIndex + 1;
      
-    if(CurrentSlideIndex >= images.length)
+    if(CurrentSlideIndex >= slides.length)
         	CurrentSlideIndex = 0;
   }
   
