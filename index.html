@@ -102,7 +102,10 @@
         	CurrentSlideIndex = 0;
   }
   
-  setInterval(UpdateSlide, 3000);
+  
+  function play() {
+    setInterval(UpdateSlide, 3000);
+  }
   
   
   //end of Javascript
@@ -130,7 +133,7 @@
         <div class="container"><!-- Start of Slideshow/Description/About Me Container -->
           <div class="row"><!-- Start of Slideshow Row Division -->
           
-            <img id="CurrentSlide" /> <!--Javascript-->
+            <img onclick="play();"> id="CurrentSlide" /> <!--Javascript-->
             
           </div><!-- End of Slideshow Row Division -->
           <div class="row"><!-- Start of Description Row Division -->
