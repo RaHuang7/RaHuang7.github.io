@@ -70,13 +70,17 @@
   
   }
   
+  #CurrentSlide {
+  width: 100px;
+  }
+  
   
 </style>
 
 <script>
   //start of Javascript
   
-  var currentslideindex = 0
+  var CurrentSlideIndex = 0
   
   var slides = {
     "http://www.ahshistory.com/wp-content/uploads/2013/06/coronationnapoleon.jpg",
@@ -88,12 +92,12 @@
   function UpdateSlide() {
     var image = document.getElementById("CurrentSlide");
     
-    image.src = images[currentslideindex];
+    image.src = images[CurrentSlideIndex];
     
-    currentslideindex = currentslideindex + 1;
+    currentslideindex = CurrentSlideIndex + 1;
      
-    if(currentslideindex >= images.length)
-        	currentslideindex = 0;
+    if(CurrentSlideIndex >= images.length)
+        	CurrentSlideIndex = 0;
   }
   
   setInterval(updateImage, 3000);
