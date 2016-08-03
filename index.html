@@ -75,6 +75,30 @@
 
 <script>
   //start of Javascript
+  
+  var currentslideindex = 0
+  
+  var slides = {
+    "http://www.ahshistory.com/wp-content/uploads/2013/06/coronationnapoleon.jpg",
+    "http://miamioh.edu/cca/_files/theatre/images/univeral-banner-images/season-2013-2014/Macbethbanner.jpg",
+    "http://main.diabetes.org/dorg/images/lps/types-of-carbohydrate-265x170.jpg",
+    "https://s-media-cache-ak0.pinimg.com/originals/af/31/5f/af315f87c135a165cf301c9ba8e29e58.gif",
+  };
+  
+  function UpdateSlide() {
+    var image = document.getElementById("CurrentSlide");
+    
+    image.src = images[currentslideindex];
+    
+    currentslideindex = currentslideindex + 1;
+     
+    if(currentslideindex >= images.length)
+        	currentslideindex = 0;
+  }
+  
+  setInterval(updateImage, 3000);
+  
+  
 
 </script>
 </head>
@@ -99,6 +123,8 @@
       <div class="col-xs-5 bordered-right-side-thick"><!-- Start of Slideshow/Description/About Me Column -->
         <div class="container"><!-- Start of Slideshow/Description/About Me Container -->
           <div class="row"><!-- Start of Slideshow Row Division -->
+          
+            <img id="CurrentSlide" /> <!--Javascript-->
             
           </div><!-- End of Slideshow Row Division -->
           <div class="row"><!-- Start of Description Row Division -->
